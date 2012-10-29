@@ -1,23 +1,70 @@
+$main-color: #440066;
+$support-color: #662222;
+$accent-color: #338811;
+$secondary-accent-color: #557777;
+$tertiary-accent-color: #F28E79;
+
+
+h1 {
+	font-family: 'gothic_ultra_ot';
+	font-size: 3.1em;
+	color: $support-color;
+}
+h2 {
+	font-family: 'gothic_ultra_ot';
+	font-size: 2.5em;
+	color: $support-color;
+}
+h3 {
+	font-family: 'gothic_ultra_ot';
+	font-size: 2em;
+	color: $support-color;
+}
+
 header {
-	#logo {
-	}
+	.navbar {
+		.brand {
+			font-family: 'roman_sd';
+			font-size: 3em;
+			color: $main-color;
+		}
 
-	ul li:nth-child(even) a {
-		color: #fe0208;
-	}
+		.nav {
+			font-family: 'gothic_ultra_ot';
+			font-size: 2em;
 
+			li:nth-child(even) a {
+				color: $support-color;
+			}
+		}
+	}
 } /* End Header */
+
 
 #banner {
 	background: url(/assets/SpaceChartes3.jpg) no-repeat;
-	margin-bottom: 10px;
-
+	margin-bottom: 1%;
+	max-height: 400px;
 
 	.banner-hero {
-		text-align: center;
-		margin-top: 10px;
+		margin-top: 1%;
+		margin-left: 1%;
+		color: $support-color;
+		-moz-box-shadow: 3px 3px 4px #444;
+		-webkit-box-shadow: 3px 3px 4px #444;
+		-ms-box-shadow: 3px 3px 4px #444;
+		box-shadow: 3px 3px 4px #444;
+		float: right;
+	}
+
+	.hero-unit {
+		h1 {
+			font-family: 'gothic_ultra_ot';
+			font-size: 4em;
+		}
 	}
 }
+
 
 .border-box {
 	display: block;
@@ -37,4 +84,26 @@ header {
 
 .socnets {
 	display: inline-block;
+}
+
+/******** Other ********/
+
+@font-face {
+	font-family: 'gothic_ultra_ot';
+	src: url('/fonts/gothic_ultra_ot-webfont.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/gothic_ultra_ot-webfont.woff') format('woff'),
+	url('/fonts/gothic_ultra_ot-webfont.ttf') format('truetype'),
+	url('/fonts/gothic_ultra_ot-webfont.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'roman_sd';
+	src: url('/fonts/roman_sd-webfont.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/roman_sd-webfont.woff') format('woff'),
+	url('/fonts/roman_sd-webfont.ttf') format('truetype'),
+	url('/fonts/roman_sd-webfont.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
