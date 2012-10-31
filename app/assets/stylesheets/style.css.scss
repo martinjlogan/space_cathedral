@@ -17,6 +17,9 @@ content: ".";
 	height: 0;
 }
 
+body {
+}
+
 h1 {
 	font-family: 'gothic_ultra_ot';
 	font-size: 3.1em;
@@ -51,6 +54,17 @@ header {
 		}
 	}
 } /* End Header */
+
+.banner {
+	background: url(/assets/space-cathedral-1200x700.jpg) no-repeat;
+	margin-bottom:2%;
+	
+	.hero-unit {
+		float:right;
+		padding:1%;
+		margin:1%;
+	}
+}
 
 .thumbnails {
 	h1 {
