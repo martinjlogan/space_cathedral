@@ -4,6 +4,18 @@ $accent-color: #338811;
 $secondary-accent-color: #557777;
 $tertiary-accent-color: #F28E79;
 
+.container-fluid {
+	max-width: 1200px;
+}
+
+.clear {
+content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
 
 h1 {
 	font-family: 'gothic_ultra_ot';
@@ -40,6 +52,15 @@ header {
 	}
 } /* End Header */
 
+.thumbnails {
+	h1 {
+		text-align: center;
+	}
+}
+
+.donate {
+	text-align: center;
+}
 
 #banner {
 	background: url(/assets/SpaceChartes3.jpg) no-repeat;
